@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  min-width: 90px;
+  padding: 0.7rem 1.6rem;
+  color: $gray;
+  border-radius: 30px;
+  border: 1px solid rgba($line-color-rgb, 0.1);
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: border 0.4s ease;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $glass-bg;
+  }
+  &.active {
+    background-color: $glass-bg;
+  }
+}
