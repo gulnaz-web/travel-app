@@ -15,11 +15,11 @@ const navItems = [
   },
   {
     icon: 'place',
-    link: '/place',
+    link: '/place/kyoto',
   },
   {
     icon: 'person_outline',
-    link: '/user',
+    link: '/profile',
   },
 ]
 
@@ -30,7 +30,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <nav className={styles.nav}>
         {navItems.map((item) => (
-          <Link 
+          <Link
             href={item.link}
             className={`${styles.link} ${pathname === item.link ? styles.active : ''}`}
             key={item.icon}
