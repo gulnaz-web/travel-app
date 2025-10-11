@@ -1,15 +1,9 @@
 'use client'
-
-import { useState } from 'react'
+import { useLocationSearch } from '@/features/search-location/model/useLocationSearch'
 import styles from './LocationSearch.module.scss'
 
 export const LocationSearch = () => {
-  const [searchTerm, setSearchTerm] = useState('')
-
-
-  const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(event.target.value)
-  }
+  const { searchTerm, handleSearch } = useLocationSearch()
 
   return (
     <div className={styles.search}>

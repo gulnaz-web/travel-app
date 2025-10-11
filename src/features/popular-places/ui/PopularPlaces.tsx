@@ -1,38 +1,15 @@
 
 'use client'
 
-import { useState } from 'react'
+import { usePopularPlaces } from '../model/usePopularPlaces'
+import { cities } from '@/features/popular-places/constants'
 import styles from './PopularPlaces.module.scss'
-
-const cities = [
-  {
-    location: 'Paris',
-  },
-  {
-    location: 'Bora Bora',
-  },
-  {
-    location: 'Maui',
-  },
-  {
-    location: 'Tahiti',
-  },
-  {
-    location: 'Brazil',
-  },
-  {
-    location: 'Norway',
-  },
-] as const
-
-type CityLocation = typeof cities[number]['location']
 
 const getButtonClassName = (isActive: boolean): string =>
   isActive ? `${styles.button} ${styles.active}` : styles.button
 
-
 export const PopularPlaces = () => {
-  const [selected, setSelected] = useState<CityLocation>('Brazil')
+  const { selected, handleSelect } = usePopularPlaces()
 
   return (
     <div className={styles.wrapper}>
@@ -43,7 +20,7 @@ export const PopularPlaces = () => {
           <button
             key={city.location}
             className={getButtonClassName(isActive)}
-            onClick={() => setSelected(city.location)}
+            onClick={() => handleSelect(city.location)}
           >
             {city.location}
           </button>
