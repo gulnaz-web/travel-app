@@ -14,6 +14,10 @@ const navItems = [
     link: '/explore',
   },
   {
+    icon: 'search',
+    link: '/search'
+  },
+  {
     icon: 'place',
     link: '/place/kyoto',
   },

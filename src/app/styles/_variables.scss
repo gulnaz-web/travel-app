@@ -1,6 +1,23 @@
+// Main colors
+$primary-color: #4db8c4;
 $background-color: #161617;
-
+$block-color: #1a1a1b;
 $text-color: #f1f1f1;
 
-$accent: #eb601e;
+$line-color: #e5e7eb;
+$line-color-rgb: rgb(229, 231, 235);
+
 $gray: #d1d1d1;
+$white: #ffffff;
+
+$placeholder: #62656a;
+
+// Glass effect colors
+$glass-bg: rgba(255, 255, 255, 0.05);
+$glass-bg-hover: rgba(255, 255, 255, 0.1);
+$glass-bg-active: rgba(255, 255, 255, 0.15);
+
+// Icon colors
+$icon-default: rgba(255, 255, 255, 0.6);
+$icon-hover: rgba(255, 255, 255, 0.9);
+$icon-active: $icon-hover;

@@ -1,0 +1,30 @@
+.search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background-color: $glass-bg;
+  border: 1px solid rgba($line-color-rgb, .1);
+  border-radius: 16px;
+
+  input {
+    flex: 1;
+    border: none;
+    background: none;
+    font-size: 16px;
+    outline: none;
+    color: $gray;
+
+    &::placeholder {
+      color: $placeholder;
+    }
+  }
+
+  &__filter_icon {
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
