@@ -1,4 +1,4 @@
-# Travel App
+# Travel App (в разработке)
 
 Next.js приложение со структурой Feature-Sliced Design
 
